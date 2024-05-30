@@ -1,3 +1,6 @@
+const root = document.getElementById("root");
+const div = document.createElement("div");
+div.setAttribute("id", "wrap");
 root.appendChild(div);
 
 function imgTag() {
@@ -21,3 +24,5 @@ const button = document.createElement("button");
 div.appendChild(h1);
 
 div.appendChild(button);
+
+// scroll Event
