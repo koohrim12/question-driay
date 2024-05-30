@@ -2,7 +2,9 @@ const root = document.getElementById("root");
 const div = document.createElement("div");
 div.setAttribute("id", "wrap");
 root.appendChild(div);
-
+root.style.width = "100vw";
+root.style.height = "100vh";
+root.style.backgroundColor = "black";
 function imgTag() {
   for (let i = 0; i < 2; i++) {
     const img = document.createElement("img");
