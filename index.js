@@ -3,6 +3,13 @@ const div = document.createElement("div");
 div.setAttribute("id", "wrap");
 root.appendChild(div);
 
+// for (let i = 0; i < 1; i++) {
+const main = document.createElement("main");
+// div.setAttribute("id", "main");
+root.appendChild(main);
+console.log(main);
+// }
+
 function imgTag() {
   for (let i = 0; i < 2; i++) {
     const img = document.createElement("img");
