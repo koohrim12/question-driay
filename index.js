@@ -2,19 +2,18 @@ const root = document.getElementById("root");
 const div = document.createElement("div");
 div.setAttribute("id", "wrap");
 root.appendChild(div);
+// root color 및 크기 지정
 root.style.width = "100vw";
 root.style.height = "100vh";
 root.style.backgroundColor = "black";
-function imgTag() {
-  for (let i = 0; i < 2; i++) {
-    const img = document.createElement("img");
+root.style.display = "flex";
+root.style.justifyContent = "center";
+root.style.alignItems = "center";
 
-    // console.log(img);
-
-    div.appendChild(img);
-  }
-}
-imgTag();
+const img = document.createElement("img");
+// console.log(img);
+div.appendChild(img);
+img.src = "logo.png";
 const h1 = document.createElement("h1");
 
 // console.log(h1);
