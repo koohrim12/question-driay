@@ -2,13 +2,9 @@ const root = document.getElementById("root");
 const div = document.createElement("div");
 div.setAttribute("id", "wrap");
 root.appendChild(div);
-
-// for (let i = 0; i < 1; i++) {
-const main = document.createElement("main");
-// div.setAttribute("id", "main");
-root.appendChild(main);
-console.log(main);
-// }
+wrap.style.width = "100vw";
+wrap.style.height = "100vh";
+wrap.style.backgroundColor = "black";
 
 function imgTag() {
   for (let i = 0; i < 2; i++) {
@@ -31,5 +27,15 @@ const button = document.createElement("button");
 div.appendChild(h1);
 
 div.appendChild(button);
+// main
+// for (let i = 0; i < 1; i++) {
+const main = document.createElement("main");
+// div.setAttribute("id", "main");
+root.appendChild(main);
+console.log(main);
+// }
 
+main.style.width = "100vw";
+main.style.height = "100vh";
+main.style.backgroundColor = "red";
 // scroll Event
