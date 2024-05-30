@@ -34,8 +34,3 @@ const main = document.createElement("main");
 root.appendChild(main);
 console.log(main);
 // }
-
-main.style.width = "100vw";
-main.style.height = "100vh";
-main.style.backgroundColor = "red";
-// scroll Event
