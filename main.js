@@ -34,9 +34,23 @@ wrap.style.alignContent = "center";
 wrap.style.flexDirection = "column-reverse";
 wrap.style.margin = "200px";
 
+let questionData = [
+  "Question 1:좋아하는 색은 무엇인가요?",
+  "Question 2:나는 올해 무엇을 포기했나요?",
+  "Question 3:어떤 계절을 좋아 하나요?",
+  "Question 4:좋아하는 좋아하는 단어가 있나요?",
+  "Question 5:오늘의 당신은 행복한 가요?",
+  "Question 6:오늘의 하늘은 어떤가요?",
+  "Question 7:지금 사고싶은 물건이 있나요?",
+  "Question 8:좋아하는 노래는 어떤 노래인가요?",
+  "Question 9:오늘 밤 무슨 꿈을 꾸고싶나요?",
+  "Question 10:당신은 지금 행복한가요?",
+];
+let questionText = 0;
 function textAppear() {
   let clickBtn = document.createElement("div");
-  clickBtn.innerHTML = "최근에 읽은 책은 무엇인가요?";
+  clickBtn.innerHTML = questionData[questionText];
+  questionText = (questionText + 1) % questionData.length;
   clickBtn.style.width = "500px";
   clickBtn.style.height = "50px";
   clickBtn.style.backgroundColor = "gray";
@@ -49,16 +63,3 @@ function textAppear() {
   }
 }
 button.addEventListener("click", textAppear);
-
-let questionData = {
-  1: "좋아하는 색은 무엇인가요?",
-  2: "나는 올해 무엇을 포기했나요?",
-  3: "어떤 계절을 좋아 하나요?",
-  4: "좋아하는 좋아하는 단어가 있나요?",
-  5: "오늘의 당신은 행복한 가요?",
-  6: "오늘의 하늘은 어떤가요?",
-  7: "지금 사고싶은 물건이 있나요?",
-  8: "좋아하는 노래는 어떤 노래인가요?",
-  9: "오늘 밤 무슨 꿈을 꾸고싶나요?",
-  10: "당신은 지금 행복한가요?",
-};
