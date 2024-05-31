@@ -11,7 +11,7 @@ console.log(button);
 // root -style
 root.style.width = "100vw";
 root.style.height = "100vh";
-root.style.backgroundColor = "pink";
+root.style.backgroundColor = "black";
 root.style.display = "flex";
 root.style.justifyContent = "center";
 root.style.alignContent = "center";
@@ -27,10 +27,10 @@ button.style.borderRadius = "30px";
 // wrap
 wrap.style.width = "50vw";
 wrap.style.height = "70vh";
-wrap.style.backgroundColor = "white";
+wrap.style.backgroundColor = "#21201E";
 wrap.style.display = "flex";
-wrap.style.justifyContent = "center";
-wrap.style.alignContent = "center";
+// wrap.style.justifyContent = "center";
+// wrap.style.alignContent = "center";
 wrap.style.flexDirection = "column-reverse";
 wrap.style.margin = "200px";
 
@@ -48,14 +48,16 @@ let questionData = [
 ];
 let questionText = 0;
 function textAppear() {
-  let clickBtn = document.createElement("div");
+  let clickBtn = document.createElement("a");
+
   clickBtn.innerHTML = questionData[questionText];
   questionText = (questionText + 1) % questionData.length;
   clickBtn.style.width = "500px";
   clickBtn.style.height = "50px";
   clickBtn.style.backgroundColor = "gray";
   clickBtn.style.margin = "5px";
-
+  clickBtn.style.borderRadius = "20px";
+  clickBtn.style.textAlign = "center";
   if (wrap.children.length < 11) {
     wrap.appendChild(clickBtn);
   } else {
