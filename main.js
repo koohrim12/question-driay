@@ -35,7 +35,7 @@ wrap.style.margin = "200px";
 
 function textAppear() {
   let clickBtn = document.createElement("div");
-  clickBtn.innerHTML = "이건 클릭 했을 때 나오는 텍스트이다.";
+  clickBtn.innerHTML = "최근에 읽은 책은 무엇인가요?";
   clickBtn.style.width = "500px";
   clickBtn.style.height = "50px";
   clickBtn.style.backgroundColor = "gray";
@@ -48,3 +48,16 @@ function textAppear() {
   }
 }
 button.addEventListener("click", textAppear);
+
+let questionData = {
+  1: "좋아하는 색은 무엇인가요?",
+  2: "나는 올해 무엇을 포기했나요?",
+  3: "어떤 계절을 좋아 하나요?",
+  4: "좋아하는 좋아하는 단어가 있나요?",
+  5: "오늘의 당신은 행복한 가요?",
+  6: "오늘의 하늘은 어떤가요?",
+  7: "지금 사고싶은 물건이 있나요?",
+  8: "좋아하는 노래는 어떤 노래인가요?",
+  9: "오늘 밤 무슨 꿈을 꾸고싶나요?",
+  10: "당신은 지금 행복한가요?",
+};
