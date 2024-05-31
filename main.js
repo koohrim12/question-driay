@@ -20,7 +20,7 @@ root.style.alignContent = "center";
 root.style.flexDirection = "column-reverse";
 
 // 버튼 - style
-button.innerHTML = "전송";
+button.innerHTML = "질문 더 받기";
 button.style.width = "100px";
 button.style.height = "50px";
 button.style.borderRadius = "30px";
@@ -31,7 +31,7 @@ button.style.borderRadius = "30px";
 
 function textAppear() {
   let clickBtn = document.createElement("div");
-  clickBtn.innerHTML = "이건 클릭 했을 때 나오는 텍스트이다.";
+  clickBtn.innerHTML = "question 1: 이건 클릭 했을 때 나오는 텍스트이다.";
   root.appendChild(clickBtn);
   clickBtn.style.width = "200px";
   clickBtn.style.height = "50px";
