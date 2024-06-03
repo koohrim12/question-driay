@@ -48,7 +48,7 @@ let questionData = [
 ];
 let questionText = 0;
 function textAppear() {
-  let clickBtn = document.createElement("a");
+  let clickBtn = document.createElement("div");
 
   clickBtn.innerHTML = questionData[questionText];
   questionText = (questionText + 1) % questionData.length;
