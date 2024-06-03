@@ -29,8 +29,8 @@ wrap.style.width = "50vw";
 wrap.style.height = "70vh";
 wrap.style.backgroundColor = "#21201E";
 wrap.style.display = "flex";
-// wrap.style.justifyContent = "center";
-// wrap.style.alignContent = "center";
+wrap.style.justifyContent = "center";
+wrap.style.alignContent = "center";
 wrap.style.flexDirection = "column-reverse";
 wrap.style.margin = "200px";
 
