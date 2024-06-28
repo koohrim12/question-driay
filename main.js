@@ -24,7 +24,7 @@ button.style.width = "100px";
 button.style.height = "50px";
 button.style.borderRadius = "30px";
 button.style.position = "fixed";
-button.style.top = "800px";
+button.style.top = "700px";
 button.style.left = "400px";
 button.style.right = "0";
 
@@ -52,10 +52,10 @@ let questionData = [
 ];
 let questionText = 0;
 function textAppear() {
-  let clickBtn = document.createElement("a");
-
+  let clickBtn = document.createElement("div");
   clickBtn.innerHTML = questionData[questionText];
   questionText = (questionText + 1) % questionData.length;
+
   clickBtn.style.width = "500px";
   clickBtn.style.height = "50px";
   clickBtn.style.backgroundColor = "gray";
